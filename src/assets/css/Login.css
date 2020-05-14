@@ -23,17 +23,6 @@ input {
     width: 100%;
 }
 
-button {
-    background-color: #6dfd9c;
-    width: 50%;
-    height: 40px;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    border-style: hidden;
-    margin-top: 30px;
-}
-
 .formError {
     color: red;
 }
