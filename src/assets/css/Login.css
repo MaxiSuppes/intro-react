@@ -33,3 +33,7 @@ button {
     border-style: hidden;
     margin-top: 30px;
 }
+
+.formError {
+    color: red;
+}
