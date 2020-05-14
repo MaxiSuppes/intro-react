@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Intro a React
 
-## Available Scripts
+### Bootstrapping del proyecto:
+#### Pre-requisitos
+Es necesario tener instaladas las ultimas versiones LTS de **Node**, **npm** y **yarn**
 
-In the project directory, you can run:
+#### Clone
+```git clone https://github.com/MaxiSuppes/intro-react.git```
 
-### `yarn start`
+#### Instalar dependencias
+Ejecutar el comando ```yarn install``` en el root del proyecto
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Variables de entorno
+Crear un archivo ```.env``` en el directorio root y copiarle el contenido del archivo ```.env.example```.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+*REACT_APP_API_URL*: Estamos usando la API gratuita https://reqres.in/api
+*REACT_APP_USING_FAKE_API*: True si se quieren usar los mocks o vacío si se quiere usar la API antes mencionada.  
 
-### `yarn test`
+#### Run
+```yarn start```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### Contenido:
+Cada una de las ramas contiene un ejemplo introductorio de algunas de las nociones principales de React.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```basic-version``` Contenido básico de una app creada con create-react-app
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```navigation``` Ejemplo de navegación básica
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```api-request``` Request a una [API pública]( https://reqres.in) usando [fetch API](https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Utilizando_Fetch)
+ 
+```login``` Login de un usuario, guardado del token en el [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Local_storage)
 
-### `yarn eject`
+```environment-variables``` Configuración de variables de entorno
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```private-routes``` Concepto de rutas privadas a las que solo se puede acceder si hay un usuario logueado
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```api-client``` Se usa un módulo para encapsular la comunicacion entre el cliente y la api
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```master``` Tiene el contenido total de todas las ramas anteriores
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Otros links de utilidad
 
-## Learn More
+[React documentation](https://reactjs.org/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Airbnb React conventions](https://github.com/airbnb/javascript/tree/master/react)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
