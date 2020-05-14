@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Redirect} from "react-router-dom";
-import {app} from "../app/app";
-import {Home} from "../controllers/Home";
-import {Profile} from "../controllers/Profile";
-import {Login} from "../controllers/Login";
+import {app} from "app/app";
+import {Home} from "controllers/Home";
+import {Profile} from "controllers/Profile";
+import {Login} from "controllers/Login";
 import {PrivateRoute} from "./PrivateRoute";
 
 class Routes extends Component {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {app} from "../app/app";
+import {app} from "app/app";
 
 
 export class Profile extends Component {

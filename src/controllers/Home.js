@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import logo from '../assets/img/logo.svg';
-import "../assets/css/Home.css";
+import logo from 'assets/img/logo.svg';
+import "assets/css/Home.css";
 
 export class Home extends Component {
     render() {

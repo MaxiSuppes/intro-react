@@ -37,11 +37,16 @@ Cada una de las ramas contiene un ejemplo introductorio de algunas de las nocion
 
 ```api-client``` Se usa un módulo para encapsular la comunicacion entre el cliente y la api
 
-```master``` Tiene el contenido total de todas las ramas anteriores
+```master``` Tiene el contenido total de todas las ramas anteriores, más un ejemplo de componente reutilizable y la configuración para absolute imports 
+
+### Que falta?
+No se agregó ningún test!
 
 ### Otros links de utilidad
 
 [React documentation](https://reactjs.org/)
+
+[Tests con Jest](https://jestjs.io/)
 
 [Airbnb React conventions](https://github.com/airbnb/javascript/tree/master/react)
 

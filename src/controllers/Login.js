@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import {app} from "../app/app";
-import "../assets/css/Login.css";
-import {Button} from "../components/common/Button";
+import {app} from "app/app";
+import {Button} from "components/common/Button";
+import "assets/css/Login.css";
 
 export class Login extends Component {
     constructor(props) {
