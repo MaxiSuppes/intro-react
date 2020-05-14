@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {getSetting} from "../settings";
 
 
 export class Profile extends Component {
@@ -32,6 +33,7 @@ export class Profile extends Component {
     }
 
     getUserData() {
-        fetch("https://reqres.in/api/users/2").then(response => response.json()).then(this.handleApiResponse);
+        const url = getSetting('API_URL') + "/users/2";
+        fetch(url).then(response => response.json()).then(this.handleApiResponse);
     }
 }
