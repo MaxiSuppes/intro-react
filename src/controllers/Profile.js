@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {getSetting} from "../settings";
+import {app} from "../app/app";
 
 
 export class Profile extends Component {
@@ -21,19 +21,18 @@ export class Profile extends Component {
         return (
             <div>
                 <h2>Perfil del usuario</h2>
-                <p>Email: {this.state.userData['first_name']}</p>
-                <p>Nombre: {this.state.userData['last_name']}</p>
-                <p>Apellido: {this.state.userData['email']}</p>
+                <p>Email: {this.state.userData.email}</p>
+                <p>Nombre: {this.state.userData.firstName}</p>
+                <p>Apellido: {this.state.userData.lastName}</p>
             </div>
         )
     }
 
-    handleApiResponse(userJson) {
-        this.setState({userData: userJson.data})
+    handleApiResponse(response) {
+        this.setState({userData: response.userPersonalData()})
     }
 
     getUserData() {
-        const url = getSetting('API_URL') + "/users/2";
-        fetch(url).then(response => response.json()).then(this.handleApiResponse);
+        app.apiClient().getProfile(this.handleApiResponse);
     }
 }
