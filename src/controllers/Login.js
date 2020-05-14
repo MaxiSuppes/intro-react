@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {getSetting} from '../settings';
 import "../assets/css/Login.css";
 
 export class Login extends Component {
@@ -38,13 +39,13 @@ export class Login extends Component {
     }
 
     handleSubmit() {
-        console.log("JSON.stringify(this.state)", JSON.stringify(this.state));
         const requestConfig = {
             method: 'POST',
             body: JSON.stringify(this.state),
             headers: {'Content-Type': 'application/json'}
         };
 
-        fetch("https://reqres.in/api/login", requestConfig).then(response => response.json()).then(this.handleApiResponse);
+        const url = getSetting('API_URL') + "/login";
+        fetch(url, requestConfig).then(response => response.json()).then(this.handleApiResponse);
     }
 }
