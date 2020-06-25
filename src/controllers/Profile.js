@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {app} from "app/app";
+import {Pepe} from "../components/Pepe";
 
 
 export class Profile extends Component {
@@ -24,6 +25,7 @@ export class Profile extends Component {
                 <p>Email: {this.state.userData.email}</p>
                 <p>Nombre: {this.state.userData.firstName}</p>
                 <p>Apellido: {this.state.userData.lastName}</p>
+                <Pepe key="pepe" nombre="pepe"/>
             </div>
         )
     }
