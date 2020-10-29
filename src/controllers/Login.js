@@ -7,7 +7,8 @@ export class Login extends Component {
 
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            errorMessage: ''
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -22,6 +23,7 @@ export class Login extends Component {
                     <input name="email" type="email" placeholder="Email" onChange={this.handleInputChange}/>
                     <input name="password" type="password" placeholder="Password" onChange={this.handleInputChange}/>
                     <button onClick={this.handleSubmit}>INGRESAR</button>
+                    <p>{this.state.errorMessage}</p>
                 </div>
             </div>
         )
@@ -33,15 +35,18 @@ export class Login extends Component {
     }
 
     handleApiResponse(response) {
-        localStorage.setItem("token", response.token);
-        this.props.history.push("/home");
+        if (response.error) {
+            this.setState({errorMessage: response.error})
+        } else {
+            localStorage.setItem("token", response.token);
+            this.props.history.push("/home");
+        }
     }
 
     handleSubmit() {
-        console.log("JSON.stringify(this.state)", JSON.stringify(this.state));
         const requestConfig = {
             method: 'POST',
-            body: JSON.stringify(this.state),
+            body: JSON.stringify({email: this.state.email, password: this.state.password}),
             headers: {'Content-Type': 'application/json'}
         };
 
