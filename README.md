@@ -54,4 +54,6 @@ No se agregó ningún test!
 
 [React Hooks or Classes](https://medium.com/better-programming/react-hooks-vs-classes-add2676a32f2)
 
+[React Hooks and Redux](https://medium.com/javascript-scene/do-react-hooks-replace-redux-210bab340672)
+
 [Virtual DOM by React](https://reactjs.org/docs/faq-internals.html#what-is-the-virtual-dom)
