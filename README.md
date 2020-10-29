@@ -46,7 +46,12 @@ No se agregó ningún test!
 
 [React documentation](https://reactjs.org/)
 
-[Tests con Jest](https://jestjs.io/)
+[Tests with Jest](https://jestjs.io/)
 
 [Airbnb React conventions](https://github.com/airbnb/javascript/tree/master/react)
 
+[React lifecycle methods](https://programmingwithmosh.com/javascript/react-lifecycle-methods/)
+
+[React Hooks or Classes](https://medium.com/better-programming/react-hooks-vs-classes-add2676a32f2)
+
+[Virtual DOM by React](https://reactjs.org/docs/faq-internals.html#what-is-the-virtual-dom)
