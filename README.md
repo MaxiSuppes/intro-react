@@ -37,7 +37,9 @@ Cada una de las ramas contiene un ejemplo introductorio de algunas de las nocion
 
 ```api-client``` Se usa un módulo para encapsular la comunicacion entre el cliente y la api
 
-```master``` Tiene el contenido total de todas las ramas anteriores, más un ejemplo de componente reutilizable y la configuración para absolute imports 
+```master``` Tiene el contenido total de todas las ramas anteriores, más un ejemplo de componente reutilizable y la configuración para absolute imports
+
+```profile-with-hooks``` Misma funcionalidad que master pero reemplazando un class component por un functional usando hooks 
 
 ### Que falta?
 No se agregó ningún test!
