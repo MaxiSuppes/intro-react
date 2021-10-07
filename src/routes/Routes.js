@@ -5,7 +5,7 @@ import {Home} from "controllers/Home";
 import {Profile} from "controllers/Profile";
 import {Login} from "controllers/Login";
 import {PrivateRoute} from "./PrivateRoute";
-import {ProfileHook} from "../controllers/ProfileHook";
+import {ProfileWithHooks} from "../controllers/ProfileWithHooks";
 
 class Routes extends Component {
     render() {
@@ -17,7 +17,7 @@ class Routes extends Component {
                     <Login {...props}/>
                 }/>
                 <PrivateRoute exact path={app.routes().home} component={Home}/>
-                <PrivateRoute exact path={app.routes().profile} component={ProfileHook}/>
+                <PrivateRoute exact path={app.routes().profile} component={ProfileWithHooks}/>
             </Router>
         )
     }
