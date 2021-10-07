@@ -46,7 +46,8 @@ export class Profile extends Component {
     Es más simple de entender cuando tengo muchas llamadas asincrónicas dependientes una de otras. */
 
     /*async getUserData() {
-        const response = await fetch("https://reqres.in/api/users/2");
+        const url = getSetting('API_URL') + "/users/2";
+        const response = await fetch(url);
         const jsonResponse = await response.json();
         this.handleApiResponse(jsonResponse);
     }*/
