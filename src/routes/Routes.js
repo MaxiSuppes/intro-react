@@ -10,6 +10,7 @@ class Routes extends Component {
     render() {
         return (
             <Router key="router">
+                {/* Exact exige que se matchee exactamente la url para renderizar su contenido */}
                 <Route exact path={app.routes().login} render={props => localStorage.getItem("token") ?
                     <Redirect to={{pathname: app.routes().home}}/> :
                     <Login {...props}/>
