@@ -8,6 +8,7 @@ class Routes extends Component {
     render() {
         return (
             <Router key="router">
+                {/* Exact exige que se matchee exactamente la url para renderizar su contenido */}
                 <Route exact path={"/"} component={Login}/>
                 <Route exact path={"/home"} component={Home}/>
                 <Route exact path={"/profile"} component={Profile}/>
