@@ -39,7 +39,7 @@ export class Login extends Component {
             this.setState({errorMessage: response.error})
         } else {
             /*
-            Es un espacio de memoria en el navegador que podemos usar para almacenar cosas.
+            Es un espacio de memoria en el navegador que podemos usar para almacenar cosas (texto).
             La diferencia con SessionStorage es que los datos no tienen expiración y son visibles en todas las tabs.
             */
             localStorage.setItem("token", response.token);
