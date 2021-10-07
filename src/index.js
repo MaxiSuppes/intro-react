@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root') // Todo lo que esté dentro de este nodo va a ser manejado por React DOM
 );
 
 // If you want your app to work offline and load faster, you can change
