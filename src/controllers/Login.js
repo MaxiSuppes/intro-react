@@ -38,6 +38,10 @@ export class Login extends Component {
         if (response.error) {
             this.setState({errorMessage: response.error})
         } else {
+            /*
+            Es un espacio de memoria en el navegador que podemos usar para almacenar cosas.
+            La diferencia con SessionStorage es que los datos no tienen expiración y son visibles en todas las tabs.
+            */
             localStorage.setItem("token", response.token);
             this.props.history.push("/home");
         }
@@ -47,6 +51,7 @@ export class Login extends Component {
         const requestConfig = {
             method: 'POST',
             body: JSON.stringify({email: this.state.email, password: this.state.password}),
+            // Para indicarle al server que tipo de dato estamos enviando
             headers: {'Content-Type': 'application/json'}
         };
 
